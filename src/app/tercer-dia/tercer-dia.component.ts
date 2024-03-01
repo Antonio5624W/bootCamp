@@ -15,7 +15,6 @@ export class TercerDiaComponent {
   users: any = []
   constructor(public exampleService: ExampleService) {
   }
-
   ngOnInit() {
     this.exampleService.obtenerlista().subscribe(resp => {
       console.log(resp);
